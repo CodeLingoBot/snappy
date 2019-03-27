@@ -468,7 +468,7 @@ abstract class AbstractGenerator implements GeneratorInterface
                             $command .= ' --' . $key . ' ' . escapeshellarg($v);
                         }
                     }
-                } else {
+                } else{
                     // Dont't add '--' if option is "cover"  or "toc".
                     if (in_array($key, ['toc', 'cover'])) {
                         $command .= ' ' . $key . ' ' . escapeshellarg($option);
